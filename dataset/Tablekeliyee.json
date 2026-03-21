@@ -1,0 +1,15 @@
+{
+	"name": "Tablekeliyee",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Table",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureTable",
+		"schema": [],
+		"typeProperties": {
+			"tableName": "doctortsss"
+		}
+	}
+}

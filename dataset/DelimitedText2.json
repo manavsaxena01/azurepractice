@@ -1,0 +1,40 @@
+{
+	"name": "DelimitedText2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "doctors.csv",
+				"container": "datarahegaesme"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "doctor_id",
+				"type": "String"
+			},
+			{
+				"name": "doctor_name",
+				"type": "String"
+			},
+			{
+				"name": "department_id",
+				"type": "String"
+			},
+			{
+				"name": "experience_years",
+				"type": "String"
+			}
+		]
+	}
+}
